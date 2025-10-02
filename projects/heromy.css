@@ -1,3 +1,20 @@
 body {
-    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    background-color:#F5DFBB;
+}
+.brown {
+    color:#562C2C;
+}
+.cyan {
+    color:#0E9594;
+}
+.green {
+    color:#12754F;
+}
+.orange {
+    color:#F2542D;
+}
+#red {
+    color:red;
 }
