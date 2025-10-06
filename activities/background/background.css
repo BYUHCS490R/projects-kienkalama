@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('red_background.jpg') rgb(148, 29, 29);
+}
+.other{
+    background-image: url('red_background.jpg');
+    /*background-repeat: repeat-y;
+    color: aliceblue;
+    background-color:
+    background-position*/
+
+}
+.mylist{
+    list-style-type: none
+}
