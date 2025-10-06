@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
     background: url('red_background.jpg') rgb(148, 29, 29);
 }
 .other{
