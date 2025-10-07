@@ -2,18 +2,22 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
     background-color:#F5DFBB;
+    color: #CC5803;
+}
+.tawny {
+    color: #CC5803;
+}
+.tan{
+    color:tan;
 }
 .brown {
-    color:#562C2C;
-}
-.cyan {
-    color:#0E9594;
-}
-.green {
-    color:#12754F;
+    color:#E2711D;
 }
 .orange {
-    color:#F2542D;
+    color:#FF9505;
+}
+.yellow{
+    color:#e99e07;
 }
 #red {
     color:red;
