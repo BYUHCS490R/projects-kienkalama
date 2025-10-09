@@ -1,7 +1,9 @@
 nav a {
     color:black
 }
-
+body{
+    background-image: url() ;
+}
 .current{
     color: brown;
 }
