@@ -7,3 +7,15 @@ body{
 .current{
     color: brown;
 }
+ul {
+    list-style: url(Nautical.png);
+}
+body{
+    background-image: url(gray.jpg);
+  background-repeat: repeat-x;
+}
+body {
+  background-image: url(Kanaka_Maoli_flag.svg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
