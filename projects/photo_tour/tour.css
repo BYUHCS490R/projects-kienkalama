@@ -14,7 +14,15 @@ body{
 ul {
     list-style: url(Nautical.png);
 }
-body{
+body {
     background-image: url(gray.jpg);
+
   background-repeat: repeat-x repeat;
+}
+nav {
+    background-image: url(Kanaka_Maoli_flag.svg.png);
+    background-position: right;
+    background-size: 200px 150px;
+    background-repeat: no-repeat;
+    
 }
