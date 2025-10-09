@@ -2,6 +2,10 @@ nav a {
     color:black
 }
 body{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(100, 24, 24);
+}
+body{
     background-image: url() ;
 }
 .current{
@@ -12,10 +16,5 @@ ul {
 }
 body{
     background-image: url(gray.jpg);
-  background-repeat: repeat-x;
-}
-body {
-  background-image: url(Kanaka_Maoli_flag.svg.png);
-  background-repeat: no-repeat;
-  background-position: right center;
+  background-repeat: repeat-x repeat;
 }
