@@ -1,0 +1,12 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+header {
+    background-color: aqua;
+}
+header h1 {
+    background-color: blue;
+}
+nav {
+    background-color: blanchedalmond;
+}
