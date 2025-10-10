@@ -17,5 +17,12 @@ nav {
 }
 main h1 {
     border: 3px dotted black;
-    width: 500px;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+main p {
+    border: thick solid brown;
+    padding: 10px 20px 30px 40px;
 }
