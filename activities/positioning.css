@@ -1,0 +1,38 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 300px;
+}
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: aqua;
+    border-bottom: thin solid wheat;
+    text-decoration:none;
+
+}
+
+.space {
+    border: thin solid black;
+    width: 300px;
+    float: right;
+}
+
+.space image {
+    width: 100%;
+}
+
+.hammer {
+    position: relative;
+    top: 100px;
+    left: 20px;
+    z-index: -1;
+    display: none;
+}
+
+.floater {
+    float:right;
+}
+
+.clear{
+    clear: both;
+}
