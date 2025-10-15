@@ -1,0 +1,18 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 100;
+    font-style: oblique;
+    line-height: normal;
+}
+body p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-transform: none;
+    text-shadow: 20cm;
+}
+main figure {
+    float: right;
+    margin: 10px;
+    width: 100px;
+}
