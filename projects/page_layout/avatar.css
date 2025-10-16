@@ -7,7 +7,10 @@ body {
     color: brown;
     background-color:wheat
 }
-
+div {
+    margin: auto;
+    box-shadow: 4px 4px 10px;
+}
 */#webheader {
     background-color: wheat;
     padding-bottom: 10px;
@@ -35,33 +38,32 @@ nav {
     text-shadow: 3px 3px 6px rgb(0, 0, 0, .5);
     font-size: 25px;
     padding: 10px 20px;
-
 }
-figure img {
-    border: 2px solid gray;
-    padding: 8px 12px;
-    background-color:wheat;
-    text-decoration: none;
-    border-radius: 4px;
-    margin: auto;
-
-}
-
 body h1 {
     background-color:burlywood
 }
 body main p {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    text-align:left;
     text-transform: none;
     text-shadow: 3px 3px 6px;
 }
 footer {
     text-transform: capitalize;
+    text-align: right;
+}
+img {
+    border: 2px solid gray;
+    padding: 8px 12px;
+    background-color:wheat;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right:auto;
+    margin-top: 10px;
 }
 #wrapper{
     width: 900px;
-    background-color: cadetblue;
+    background-color: wheat;
     margin-left: auto;
     margin-right: auto;
 }
