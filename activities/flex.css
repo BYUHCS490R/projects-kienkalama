@@ -1,0 +1,18 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+    border: thin solid navy;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 5px 5px 6px navy;
+    width: 150px;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
