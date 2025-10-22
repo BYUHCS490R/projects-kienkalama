@@ -1,0 +1,21 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+}
+.sidebar {
+    display: flex;
+    justify-content:left;
+}
+.cards {
+    border: thick solid yellow;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 5px 5px 6px yellow;
+    width: 150px; 
+}
+.column {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
