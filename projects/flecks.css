@@ -2,17 +2,23 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: brown;
 }
-.sidebar {
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+}
+aside {
+    background-color:tan;
+    color: brown;
+    padding: 20px;
+}
+main {
     display: flex;
-    justify-content:left;
+    width: 100%;
+    padding: 20px;
+    background-color: grey;
 }
-.cards {
-    border: thick solid yellow;
-    border-radius: 5px;
-    margin: 5px;
-    box-shadow: 5px 5px 6px yellow;
-    width: 150px; 
-}
+
 .column {
     display: flex;
     justify-content: space-around;
@@ -20,3 +26,26 @@ body {
     flex-wrap: wrap;
     color: #000;
 }
+.cards {
+    display: grid;
+    gap: 20px;
+    padding: 40px;
+    color: yellow;
+    border: thick solid black;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 5px 5px 6px black; 
+}
+.cards img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.grid {
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(5,auto);
+    padding: 10px;
+}
+
+
