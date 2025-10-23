@@ -28,18 +28,18 @@ main {
 }
 .cards {
     display: grid;
-    gap: 20px;
-    padding: 40px;
+    gap: auto;
+    padding: 10px;
     color: yellow;
     border: thick solid black;
     border-radius: 5px;
-    margin: 5px;
+    margin: auto;
     box-shadow: 5px 5px 6px black; 
 }
 .cards img {
     width: auto;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 .grid {
     display: grid;
