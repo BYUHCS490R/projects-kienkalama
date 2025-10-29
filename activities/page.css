@@ -44,7 +44,7 @@ nav {
 .sidebar {
     width: 200px;
 }
-@media ONLY screen AND (max-width: 500px){
+@media ONLY screen AND (max-width: 480px){
     body {
         flex-direction: column-reverse;
     }

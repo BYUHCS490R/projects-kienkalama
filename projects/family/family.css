@@ -1,0 +1,12 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+figure {
+    margin: 0%;
+}
+@media ONLY screen AND (max-width: 480px){
+
+}
+@media ONLY print{
+    
+}
