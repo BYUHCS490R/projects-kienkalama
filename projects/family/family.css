@@ -1,12 +1,33 @@
 body {
     font-family: 'Times New Roman', Times, serif;
 }
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cadetblue;
+}
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    color: blanchedalmond;
+    background-color: grey;
+}
+.sidebar {
+    width: 25%;
+}
 figure {
     margin: 0%;
 }
 @media ONLY screen AND (max-width: 480px){
+ body{ background-color: red;
 
 }
+}
 @media ONLY print{
-    
+    nav {display: none;
+    }
 }
