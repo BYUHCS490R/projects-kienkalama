@@ -1,14 +1,25 @@
 body {
     font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    line-height: 1.4;
+    background-color: antiquewhite;
+}
+header {
+    background-color: brown;
+    color: antiquewhite;
+    padding: 20px;
 }
 nav {
+    background-color: rosybrown;
     display: flex;
-    justify-content: space-evenly;
-    background-color: cadetblue;
+    justify-content: space-evenly; 
+    padding: 10px;
+
 }
 nav a {
     display: block;
     padding: 10px;
+    font-weight: bold;
     text-decoration: none;
     color: black;
 }
@@ -16,17 +27,32 @@ nav a:hover {
     color: blanchedalmond;
     background-color: grey;
 }
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
 .sidebar {
     width: 25%;
+}
+.main-row {
+    display: flex;
+    flex-direction: column;
 }
 figure {
     margin: 0%;
 }
 @media ONLY screen AND (max-width: 480px){
- body{ background-color: red;
+ body { 
+    background-color: red;
+}
 
+nav { 
+    display:flex;
+    justify-content: left;
 }
-}
+
 @media ONLY print{
     nav {display: none;
     }
