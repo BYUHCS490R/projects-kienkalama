@@ -11,7 +11,56 @@
     </header>
     <main>
         <h1>Tables</h1>
-        
+        <table border="1">
+           <thead>
+                <tr>
+                    <th>Department</td>
+                    <th>Number</td>
+                    <th>Title</td>
+                    <th>Time</td>
+                    <th>Location</td>
+                    <th>Credits</td>
+                </tr>
+            </thead>
+            <td colspan="6">Fall 2025</td>
+            <tbody>
+                <tr>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>10 AM MWF</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td rowspan="3">101</td>
+                    <td>Quantitive Reasoning</td>
+                    <td>11 AM MWF</td>
+                    <td>P6</td>
+                    <td>4</td>
+                </tr><tr>
+                    <td>Language</td>
+                    <td>Spanish</td>
+                    <td>5 PM MWF</td>
+                    <td>P3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Psych</td>
+                    <td>Mental Health</td>
+                    <td>4 PM MWF</td>
+                    <td>P12</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" id="total-credits">Total Credits</th>
+                    <td id="total-credits">15</td>
+                </tr>
+            </tfoot>
+        </table>
     </main>
     <footer>
         <p>&copy; All rights Reserved 2025</p>
