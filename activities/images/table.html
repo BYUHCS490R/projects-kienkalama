@@ -4,63 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
     <header>
-        < h1>Kiefns Web Design</h1>
+        <h1>Kiens Web Design</h1>
     </header>
     <main>
-        <h1>les</h1>
-        <le border="1">
-           <thead>
-                <tr>
-                    <th>Department</td>
-                    <th>Number</td>
-                    <th>Title</td>
-                    <th>Time</td>
-                    <th>Location</td>
-                    <th>Credits</td>
-                </tr>
-            </thead>
-            <td colspan="6">Fall 2025</td>
-            <tbody>
-                <tr>
-                    <td>CS</td>
-                    <td>140</td>
-                    <td>Web Design</td>
-                    <td>10 AM MWF</td>
-                    <td>P3</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Math</td>
-                    <td rowspan="3">101</td>
-                    <td>Quantitive Reasoning</td>
-                    <td>11 AM MWF</td>
-                    <td>P6</td>
-                    <td>4</td>
-                </tr><tr>
-                    <td>Language</td>
-                    <td>Spanish</td>
-                    <td>5 PM MWF</td>
-                    <td>P3</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Psych</td>
-                    <td>Mental Health</td>
-                    <td>4 PM MWF</td>
-                    <td>P12</td>
-                    <td>3</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="5" id="total-credits">Total Credits</th>
-                    <td id="total-credits">15</td>
-                </tr>
-            </tfoot>
-        </le>
+        <h1> Tables </h1>
+            <table class="schedule">
+                <thead class="red">
+                    <tr>
+                        <th>Department</th>
+                        <th>Number</th>
+                        <th>Subject</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <td colspan="6">Fall 2025</td>
+                <tbody>
+                    <tr>
+                        <td>CS</td>
+                        <td>140</td>
+                        <td>Web Design</td>
+                        <td>10 AM MWF</td>
+                        <td>P3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td rowspan="3">101</td>
+                        <td>Quantitive Reasoning</td>
+                        <td>11 AM MWF</td>
+                        <td>P6</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td>Spanish</td>
+                        <td>5 PM MWF</td>
+                        <td>P3</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Psych</td>
+                        <td>Mental Health</td>
+                        <td>4 PM MWF</td>
+                        <td>P12</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+                <tfoot class="red">
+                    <tr>
+                        <th colspan="5" id="total-credits">Total Credits</th>
+                        <td id="total-credits">15</td>
+                    </tr>
+                </tfoot>
+        </table>
     </main>
     <footer>
         <p>&copy; All rights Reserved 2025</p>
