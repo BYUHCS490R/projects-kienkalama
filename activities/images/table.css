@@ -32,3 +32,8 @@ body {
 .schedule tbody tr:nth-child(even) {
     background-color: gray;
 }
+.design {
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+}

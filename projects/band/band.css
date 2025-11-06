@@ -2,3 +2,54 @@ body{
     font-family: 'Times New Roman', Times, serif;
     
 }
+.sidebar {
+    display: flex;
+    justify-content: right;
+}
+.favorites {
+    border: solid grey;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    caption-side: bottom;
+}
+.favorites th, .favorites td {
+    border: solid thin black;
+    padding: 5px;
+    height: 40px;
+    vertical-align: top;
+}
+.favorites thead tr {
+    background-color: brown;
+    color: white;
+}
+.favorites tbody tr:nth-child(even) {
+    background-color: blueviolet;
+    color: azure;
+}
+
+.red {
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+nav a {
+    display: block;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: blueviolet;
+}
+nav a :hover {
+    background-color: grey;
+    color: blanchedalmond;
+}
