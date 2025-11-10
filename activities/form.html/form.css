@@ -1,0 +1,12 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
