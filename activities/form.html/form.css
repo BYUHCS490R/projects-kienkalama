@@ -22,7 +22,7 @@ legend {
     padding: 5px 10px;
     background-color: aquamarine;
     font-family: 'Times New Roman', Times, serif;
-    
+
 }
 
 .form-row input[type='submit'] {
@@ -54,6 +54,6 @@ legend {
     }
 
     .form-row lable, .spacer{
-        text-align: ;
+        text-align: justify;
     }
 }
