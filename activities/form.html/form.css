@@ -1,6 +1,35 @@
 body {
     font-family: 'Times New Roman', Times, serif;
 }
+
+fieldset {
+    background-color: lightcoral;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: auto;
+}
+.form-row,.check-row
+
+legend {
+    padding: 20px;
+    color: black;
+
+}
+.check-row {
+
+}
+.form-row input:not([type='submit']), .form-row select, .form-row textarea {
+    padding: 5px 10px;
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.form-row input[type='submit'] {
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
 .form-row {
     display: flex;
     gap: 10px;
@@ -9,4 +38,22 @@ body {
 .form-row label {
     width: 150px;
     text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+@media ONLY screen AND (max-width: 480px){
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+
+    .form-row lable, .spacer{
+        text-align: ;
+    }
 }
