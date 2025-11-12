@@ -1,0 +1,15 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.change {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: cadetblue;
+}
+.foot {
+    font-family: cursive;
+    font-size: large;
+    color: lightseagreen;
+ }
