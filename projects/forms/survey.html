@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="survey.css">
+    
     <title>Survey</title>
 </head>
 <body>
@@ -15,17 +16,61 @@
         
         <form action="survey.html">
             <fieldset>
-                <div class="form-row">
-                    <label for="fname">First name</label>
-                    <input type="text" name="fname" id="fname">
-                </div>
-                <div class="form-row">
-                    <label for="lname">Last name</label>
-                    <input type="text" name="lname" id="lname">
-                </div>
+                <legend>
+                    <div class="form-row">
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div class="form-row">
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                </legend>
                 <div class="form-row">
                     <label for="pass">Password</label>
                     <input type="password" name="pass">
+                </div>
+                <div class="form-row">
+                    <label for="checkbox">Are you a robot? </label>
+                    <input type="checkbox" name="option">
+                </div>
+                <div class="form-row">
+                    <label>Are you a citizen of the United States?</label>
+                    <label>Yes<input type="radio" id="option1" name="myoption" value="Yes"></label>
+                    <label>No<input type="radio" id="option2" name="myoption" value="No"></label>
+                </div>
+                <div class="form-row">
+                    <label for="states">If yes select State</label>
+                    <select name="states" id="states">
+                    <option value="blank">------------</option>
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="arkansas">Arkansas</option>
+                    <option value="california">California</option>
+                    <option value="colorado">Colorado</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="user_input" id="text">
+                        Enter comment here...
+                    </textarea>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="notrequired@gmail.com">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="(111)111-1111">
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="submit form">
                 </div>
             </fieldset>
         </form>

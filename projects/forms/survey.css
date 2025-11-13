@@ -1,5 +1,19 @@
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
+}
+fieldset {
+    background-color: bisque;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: 0;
+}
+legend {
+    padding: 20px;
+    color: brown;
+}
+
+.check-row {
+
 }
 .form-row {
     display: flex;
@@ -16,5 +30,30 @@ body{
 .foot {
     font-family: cursive;
     font-size: large;
-    color: lightseagreen;
+    color: darkblue;
  }
+
+ .form-row label {
+    width: 150px;
+    text-align: right;
+ }
+
+ .spacer {
+    width: 150px;
+    text-align: right;
+ }
+
+ .form-row input [type="submit"] {
+    background-color: aquamarine;
+    padding: 10px;
+ }
+ @media ONLY screen AND (max-width: 480px){    
+    .form-row { 
+        flex-direction: column;
+    }
+    fieldset {
+        width: 90%;
+    }
+    .form-row, .spacer {
+        text-align: justify;
+    }
