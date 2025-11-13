@@ -7,9 +7,10 @@ fieldset {
     width: 80%;
     margin: 0;
 }
+
 legend {
     padding: 20px;
-    color: brown;
+    color:navy
 }
 
 .check-row {
@@ -43,11 +44,13 @@ legend {
     text-align: right;
  }
 
+ .form-row input:not([type='submit']), .form-row select, .form-row textarea
+
  .form-row input [type="submit"] {
-    background-color: aquamarine;
+    background-color: lightblue;
     padding: 10px;
  }
- @media ONLY screen AND (max-width: 480px){    
+ @media ONLY screen AND (max-width: 480px)    
     .form-row { 
         flex-direction: column;
     }
