@@ -14,30 +14,31 @@
     
     <main>
         
-        <form action="survey.html">
+        <form action="survey.html" method="post">
             <fieldset>
-                <legend>
-                    <div class="form-row">
-                        <label for="fname">First name</label>
-                        <input type="text" name="fname" id="fname">
-                    </div>
-                    <div class="form-row">
-                        <label for="lname">Last name</label>
-                        <input type="text" name="lname" id="lname">
-                    </div>
-                </legend>
+                <legend>Personal information</legend>
+                <div class="form-row">
+                    <label for="fname">First name</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
                 <div class="form-row">
                     <label for="pass">Password</label>
-                    <input type="password" name="pass">
+                    <input type="password" name="pass" id="pass">
                 </div>
-                <div class="form-row">
+                <div class="check-row">
                     <label for="checkbox">Are you a robot? </label>
-                    <input type="checkbox" name="option">
+                    <input type="checkbox" name="option" id="checkbox">
                 </div>
-                <div class="form-row">
+                <div class="check-row">
                     <label>Are you a citizen of the United States?</label>
-                    <label>Yes<input type="radio" id="option1" name="myoption" value="Yes"></label>
-                    <label>No<input type="radio" id="option2" name="myoption" value="No"></label>
+                    <div class="check">
+                        <label class="spacer">Yes<input type="radio" id="option1" name="myoption" value="Yes"></label>
+                        <label class="spacer">No<input type="radio" id="option2" name="myoption" value="No"></label>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="states">If yes select State</label>
@@ -51,15 +52,13 @@
                     <option value="colorado">Colorado</option>
                     </select>
                 </div>
-                <div>
+                <div class="form-row">
                     <label for="dob">Date of Birth</label>
                     <input type="date" name="dob" id="dob">
                 </div>
                 <div class="form-row">
-                    <label for="comments">Comments</label>
-                    <textarea name="user_input" id="text">
-                        Enter comment here...
-                    </textarea>
+                    <label for="text">Comments</label>
+                    <textarea name="user_input" id="text" placeholder="Enter comments here..."></textarea>
                 </div>
                 <div class="form-row">
                     <label for="email">Email</label>

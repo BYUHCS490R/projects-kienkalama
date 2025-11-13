@@ -13,13 +13,14 @@ legend {
     color:navy
 }
 
-.check-row {
-
-}
-.form-row {
+.form-row, .check-row {
     display: flex;
     gap: 10px;
     margin: 15px 0;
+}
+
+.check {
+
 }
 
 .change {
@@ -34,29 +35,34 @@ legend {
     color: darkblue;
  }
 
- .form-row label {
+ .form-row label, .check-row label {
     width: 150px;
     text-align: right;
  }
 
- .spacer {
-    width: 150px;
-    text-align: right;
- }
+ .form-row input:not([type='submit']), 
+.form-row select,
+.form-row textarea{
+    flex: 1;
+    padding: 8px;
+    font-size: 1em
+}
 
- .form-row input:not([type='submit']), .form-row select, .form-row textarea
-
- .form-row input [type="submit"] {
+ .form-row input[type="submit"] {
     background-color: lightblue;
     padding: 10px;
+    border: none;
  }
- @media ONLY screen AND (max-width: 480px)    
+ 
+ @media only screen and (max-width: 480px) {
     .form-row { 
         flex-direction: column;
     }
     fieldset {
         width: 90%;
     }
-    .form-row, .spacer {
-        text-align: justify;
+    .form-row, 
+    .spacer {
+        text-align: left;
     }
+}
