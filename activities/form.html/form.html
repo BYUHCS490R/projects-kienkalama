@@ -17,56 +17,60 @@
     </nav>
     <main>
         <h1>Forms</h1>
-        <form action="formproccess.html" method="post">
-            <fieldset>
-                <legend>Sign Up</legend>
-                <div class="form-row">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" name="fname" id="full-name" placeholder="Full name">
-                </div>
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" value="your@email.com">
-                </div> 
-                <div class="form-row">
-                    <label for="pass">Password</label>
-                    <input type="password" name="pass">
-                </div>
-                <div class="form-row">
-                    <label for="state">State</label>
-                    <select name="state" id="state">
-                        <option value="blank">-----------</option>
-                        <option value="CA">California</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="UT">Utah</option>
-                    </select>
-                </div>
-                <div class="form-row">
-                    <div class="spacer"></div>
-                    <label><input type="checkbox" name="agree"> I agree to the terms.</label>          </label>
-                </div>
-                <div class="form-row">
-                    <div class="spacer">Gender:</div>
-                    <label><input type="radio" name="Gender" value="male">Male</label>
-                    <label><input type="radio" name="Gender" value="female">Female</label>
-                </div>
-                <div class="form-row">
-                    <label for="comments">Comments</label>
-                </div>
-                <div class="form-row">
-                    <div class="spacer"></div>
-                    <input type="submit" value="Sign Up">
-                </div>
+        <div id="message">
+            <form action="formproccess.html" method="post">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="form-row">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="fname" id="full-name" placeholder="Full name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" value="your@email.com">
+                    </div> 
+                    <div class="form-row">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass">
+                    </div>
+                    <div class="form-row">
+                        <label for="state">State</label>
+                        <select name="state" id="state">
+                            <option value="blank">-----------</option>
+                            <option value="CA">California</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="UT">Utah</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <label><input type="checkbox" name="agree"> I agree to the terms.</label>          </label>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer">Gender:</div>
+                        <label><input type="radio" name="Gender" value="male">Male</label>
+                        <label><input type="radio" name="Gender" value="female">Female</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="comments">Comments</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="spacer"></div>
+                        <input type="submit" value="Sign Up">
+                    </div>
 
-            </fieldset>
-        </form>
-        <h3>Questions</h3>
-        <ol>
+                </fieldset>
+            </form>
+            <h3>Questions</h3>
+            <ol>
 
-        </ol>
+            </ol>
+        </div>
     </main>
     <footer>
         <p>&copy; All rights reserved</p>
     </footer>
+    <script src="form.js">
+    </script>
 </body>
 </html>
