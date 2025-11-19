@@ -58,18 +58,35 @@
                         <div class="spacer"></div>
                         <input type="submit" value="Sign Up">
                     </div>
-
                 </fieldset>
             </form>
-            <h3>Questions</h3>
-            <ol>
-
-            </ol>
     </main>
     <footer>
         <p>&copy; All rights reserved</p>
     </footer>
-    <script src="form.js">
+    <script>
+        function checkInputLength() {
+    const myInput = document.getElementById("myInputField");
+    const messageElement = document.getElementById("message");
+
+    if (!myInput || !messageElement) {
+        console.error("Element not found: #myInputField or #message");
+        return;
+    }
+
+    const inputLength = myInput.value.length;
+
+    if (inputLength < 3) {
+        messageElement.textContent = "Input must be at least 3 characters.";
+        messageElement.style.color = "red";
+    } else if (inputLength > 10) {
+        messageElement.textContent = "Input cannot exceed 10 characters.";
+        messageElement.style.color = "red";
+    } else {
+        messageElement.textContent = "Input length is valid.";
+        messageElement.style.color = "green";
+    }
+}
     </script>
 </body>
 </html>
