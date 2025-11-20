@@ -87,7 +87,7 @@ const formData = {
     age: age,
 };
 
-console.log(formData);
+// console.log(formData);
 
 const xhr = new XMLHttpRequest();
 xhr.open("POST", "submit.json", true);
