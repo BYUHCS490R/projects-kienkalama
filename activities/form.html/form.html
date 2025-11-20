@@ -27,11 +27,11 @@
                     </div>
                     <div class="form-row">
                         <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" value="your@email.com">
+                        <input type="text" name="email" id="email"placeholder="your@email.com">
                     </div> 
                     <div class="form-row">
                         <label for="pass">Password</label>
-                        <input type="password" name="pass">
+                        <input type="password" name="pass" id="pass" autocomplete="new-password">
                     </div>
                     <div class="form-row">
                         <label for="state">State</label>
@@ -41,6 +41,10 @@
                             <option value="HI">Hawaii</option>
                             <option value="UT">Utah</option>
                         </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="age">age</label>
+                        <input type="number" name="age" id="age">
                     </div>
                     <div class="form-row">
                         <div class="spacer"></div>
@@ -65,84 +69,7 @@
     <footer>
         <p>&copy; All rights reserved</p>
     </footer>
-<script src="form.js">
-document.getElementById("myForm").addEventListener("submit", handleFormSubmit);
-
-function handleFormSubmit(event) {
-    event.preventDefault(); // stop normal form submission
-
-    const form = event.target;
-    const formData = new FormData(form);
-    const dataObject = {};
-
-    // Convert form fields to JS object
-    formData.forEach((value, key) => {
-        dataObject[key] = value;
-    });
-
-    // ---- VALIDATION ----
-    if (!dataObject.fname || dataObject.fname.trim() === "") {
-        alert("Full Name is required.");
-        return;
-    }
-
-    if (!dataObject.email || dataObject.email.trim() === "") {
-        alert("Email is required.");
-        return;
-    }
-
-    if (!dataObject.pass || dataObject.pass.trim() === "") {
-        alert("Password is required.");
-        return;
-    }
-
-    // Age check (must exist)
-    const age = Number(dataObject.age);
-    if (isNaN(age) || age < 18 || age > 99) {
-        alert("Age must be between 18 and 99.");
-        return;
-    }
-
-    if (dataObject.fname.length < 3) {
-        alert("Full Name must be at least 3 characters long.");
-        return;
-    }
-
-    console.log("Form object ready to send:", dataObject);
-
-    // ---- AJAX / XHR Simulation with GET (required by GitHub Pages) ----
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "submit.json", true);  // Load the mock JSON file
-
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            const response = JSON.parse(xhr.responseText);
-
-            if (response.success) {
-                document.getElementById("serverMessage").textContent = response.message;
-                document.getElementById("serverMessage").style.color = "green";
-
-                // Notify user & reset form
-                form.reset();
-                disableFormFields(form);
-            }
-        } else {
-            alert("Error loading server response.");
-        }
-    };
-
-    xhr.onerror = function() {
-        alert("Network error.");
-    };
-
-    xhr.send(); // send GET request
-}
-
-function disableFormFields(form) {
-    const elements = form.querySelectorAll("input, select, button, textarea");
-    elements.forEach(el => el.disabled = true);
-}
-</script>
+<script src="form.js"></script>
     
 </body>
 </html>
