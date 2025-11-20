@@ -91,7 +91,7 @@ const formData = {
 
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "submit.json", true);
-xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+// xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
 xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
