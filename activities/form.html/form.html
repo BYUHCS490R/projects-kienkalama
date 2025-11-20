@@ -18,52 +18,69 @@
     <main>
         <h1>Forms</h1>
         <div id="message"></div>
-            <form id="myform">
-                <fieldset>
-                    <legend>Sign Up</legend>
-                    <div class="form-row">
-                        <label for="full-name">Full Name</label>
-                        <input type="text" name="fname" id="full-name" placeholder="Full name">
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email"placeholder="your@email.com">
-                    </div> 
-                    <div class="form-row">
-                        <label for="pass">Password</label>
-                        <input type="password" name="pass" id="pass" autocomplete="new-password">
-                    </div>
-                    <div class="form-row">
-                        <label for="state">State</label>
-                        <select name="state" id="state">
-                            <option value="blank">-----------</option>
-                            <option value="CA">California</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="UT">Utah</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <label for="age">age</label>
-                        <input type="number" name="age" id="age">
-                    </div>
-                    <div class="form-row">
-                        <div class="spacer"></div>
-                        <label><input type="checkbox" name="agree"> I agree to the terms.</label>          </label>
-                    </div>
-                    <div class="form-row">
-                        <div class="spacer">Gender:</div>
-                        <label><input type="radio" name="Gender" value="male">Male</label>
-                        <label><input type="radio" name="Gender" value="female">Female</label>
-                    </div>
-                    <div class="form-row">
-                        <label for="comments">Comments</label>
-                    </div>
-                    <div class="form-row">
-                        <div class="spacer"></div>
-                        <input type="submit" value="Sign Up">
-                    </div>
-                </fieldset>
-            </form>
+            <form id="myform" autocomplete="on">
+    <fieldset>
+        <legend>Sign Up</legend>
+
+
+        <div class="form-row">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="fname" id="full-name" placeholder="Full name" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your@email.com" autocomplete="email" required>
+        </div>
+
+        <div class="form-row">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" id="pass" autocomplete="new-password" required>
+        </div>
+
+        <div class="form-row">
+            <label for="state">State</label>
+            <select name="state" id="state" autocomplete="address-level1">
+                <option value="">-----------</option>
+                <option value="CA">California</option>
+                <option value="HI">Hawaii</option>
+                <option value="UT">Utah</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" autocomplete="off" min="1" max="99" required>
+        </div>
+
+        <div class="form-row">
+            <div class="spacer"></div>
+            <label>
+                <input type="checkbox" name="agree" required> 
+                I agree to the terms.
+            </label>
+        </div>
+
+       
+        <div class="form-row">
+            <div class="spacer">Gender:</div>
+            <label><input type="radio" name="Gender" value="male" autocomplete="sex"> Male</label>
+            <label><input type="radio" name="Gender" value="female" autocomplete="sex"> Female</label>
+        </div>
+
+        <div class="form-row">
+            <label for="comments">Comments</label>
+        </div>
+        <div class="form-row">
+            <textarea id="comments" name="comments" rows="4" autocomplete="off"></textarea>
+        </div>
+
+        <div class="form-row">
+            <div class="spacer"></div>
+            <input type="submit" value="Sign Up">
+        </div>
+    </fieldset>
+</form>
             <p>javascript</p>
     </main>
     <footer>
