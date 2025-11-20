@@ -89,22 +89,30 @@ const formData = {
 
 // console.log(formData);
 
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "submit.json", true);
-// xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+form.addEventListener("submit", function(e){
+    e.preventDefault();
 
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-            alert("Form submitted successfully!");
-            const response = JSON.parse(xhr.responseText);
 
-            document.getElementById('message').innerText = response.message;
-        } else {
-            alert("Error submitting form.");
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "submit.json", true);
+    // xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                alert("Form submitted successfully!");
+                const response = JSON.parse(xhr.responseText);
+
+                document.getElementById('message').innerText = response.message;
+            } else {
+                alert("Error submitting form.");
+            }
         }
-    }
-};
+    };
 
-// xhr.send(JSON.stringify(formData));
-xhr.send();
+    // xhr.send(JSON.stringify(formData));
+    xhr.send();
+
+});
+
+
