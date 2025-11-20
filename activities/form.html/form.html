@@ -18,7 +18,7 @@
     <main>
         <h1>Forms</h1>
         <div id="message"></div>
-            <form action="formproccess.html" method="post">
+            <form id="myform">
                 <fieldset>
                     <legend>Sign Up</legend>
                     <div class="form-row">
@@ -65,29 +65,84 @@
     <footer>
         <p>&copy; All rights reserved</p>
     </footer>
-    <script>
-        function checkInputLength() {
-    const myInput = document.getElementById("myInputField");
-    const messageElement = document.getElementById("message");
+<script src="form.js">
+document.getElementById("myForm").addEventListener("submit", handleFormSubmit);
 
-    if (!myInput || !messageElement) {
-        console.error("Element not found: #myInputField or #message");
+function handleFormSubmit(event) {
+    event.preventDefault(); // stop normal form submission
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const dataObject = {};
+
+    // Convert form fields to JS object
+    formData.forEach((value, key) => {
+        dataObject[key] = value;
+    });
+
+    // ---- VALIDATION ----
+    if (!dataObject.fname || dataObject.fname.trim() === "") {
+        alert("Full Name is required.");
         return;
     }
 
-    const inputLength = myInput.value.length;
-
-    if (inputLength < 3) {
-        messageElement.textContent = "Input must be at least 3 characters.";
-        messageElement.style.color = "red";
-    } else if (inputLength > 10) {
-        messageElement.textContent = "Input cannot exceed 10 characters.";
-        messageElement.style.color = "red";
-    } else {
-        messageElement.textContent = "Input length is valid.";
-        messageElement.style.color = "green";
+    if (!dataObject.email || dataObject.email.trim() === "") {
+        alert("Email is required.");
+        return;
     }
+
+    if (!dataObject.pass || dataObject.pass.trim() === "") {
+        alert("Password is required.");
+        return;
+    }
+
+    // Age check (must exist)
+    const age = Number(dataObject.age);
+    if (isNaN(age) || age < 18 || age > 99) {
+        alert("Age must be between 18 and 99.");
+        return;
+    }
+
+    if (dataObject.fname.length < 3) {
+        alert("Full Name must be at least 3 characters long.");
+        return;
+    }
+
+    console.log("Form object ready to send:", dataObject);
+
+    // ---- AJAX / XHR Simulation with GET (required by GitHub Pages) ----
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "submit.json", true);  // Load the mock JSON file
+
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            const response = JSON.parse(xhr.responseText);
+
+            if (response.success) {
+                document.getElementById("serverMessage").textContent = response.message;
+                document.getElementById("serverMessage").style.color = "green";
+
+                // Notify user & reset form
+                form.reset();
+                disableFormFields(form);
+            }
+        } else {
+            alert("Error loading server response.");
+        }
+    };
+
+    xhr.onerror = function() {
+        alert("Network error.");
+    };
+
+    xhr.send(); // send GET request
 }
-    </script>
+
+function disableFormFields(form) {
+    const elements = form.querySelectorAll("input, select, button, textarea");
+    elements.forEach(el => el.disabled = true);
+}
+</script>
+    
 </body>
 </html>
