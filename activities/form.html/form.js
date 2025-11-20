@@ -106,4 +106,5 @@ xhr.onreadystatechange = function () {
     }
 };
 
-xhr.send(JSON.stringify(formData));
+// xhr.send(JSON.stringify(formData));
+xhr.send();
