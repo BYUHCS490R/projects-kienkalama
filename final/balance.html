@@ -18,42 +18,9 @@
         <a href="spiritual.html">Spiritual</a>
     </nav>
     <main>
-        <h1>What are S.M.A.R.T. goals?</h1>
-        <table class="table">
-            <thead class="green">
-                <tr>
-                    <th>Specific</th>
-                    <th>Measurable</th>
-                    <th>Attainable</th>
-                    <th>Realistic</th>
-                    <th>Timely</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Specific</td>
-                    <td colspan="5">Your goal should be clear and define what specifically you want to achieve</td>
-                </tr>
-                <tr>
-                    <td>Measurable</td>
-                    <td colspan="5">The goal that you make should be able to be tracked and should define how you success is measured</td>
-                </tr>
-                <tr>
-                    <td>Attainable</td>
-                    <td colspan="5">Can you achieve your goal in the amount of time that you have or with the resouces that are available to you?</td>
-                </tr>
-                <tr>
-                    <td>Relevant</td>
-                    <td colspan="5">If you succeed in that goal will it help will it help you in other aspects of your life?</td>
-                </tr>
-                <tr>
-                    <td>Timely</td>
-                    <td colspan="5">What is the time table for your goals? How fast do you want to be able to achieve them?</td>
-                </tr>
-            </tbody>
-        </table>
-        <form action="balance.html" method="post">
-            <legend> How can I change?</legend>
+        <div id="message"></div>
+        <form action="balance.html" method="get" id="myform">
+            <fieldset>
                 <div class="survey-row">
                     <label for="fname">First name</label>
                     <input type="text" name="fname" id="fname">
@@ -104,13 +71,16 @@
                     <input type="tel" name="phone" id="phone" placeholder="(111)111-1111">
                 </div>
                 <div class="survey-row">
-                    <input type="submit" value="submit form">
+                    <input type="submit" value="submit">
                 </div>
             </fieldset>
         </form>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eius laborum adipisci, ut beatae eaque officiis quis eos excepturi amet nam? Ut debitis quia at facere quaerat deleniti ipsum!</p>
 
     </main>
-    
-
+    <footer>
+        <p>&copy; All rights reserved 2025</p>
+    </footer>
+    <script src="survey.js"></script>
 </body>
 </html>
