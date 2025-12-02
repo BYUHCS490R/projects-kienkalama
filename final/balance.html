@@ -52,6 +52,63 @@
                 </tr>
             </tbody>
         </table>
+        <form action="balance.html" method="post">
+            <legend> How can I change?</legend>
+                <div class="survey-row">
+                    <label for="fname">First name</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="survey-row">
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div class="survey-row">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="survey-row">
+                    <label for="checkbox">Are you a robot? </label>
+                    <input type="checkbox" name="option" id="checkbox">
+                </div>
+                <div class="survey-row">
+                    <label>Are you a citizen of the United States?</label>
+                    <div class="check">
+                        <label class="spacer">Yes<input type="radio" id="option1" name="myoption" value="Yes"></label>
+                        <label class="spacer">No<input type="radio" id="option2" name="myoption" value="No"></label>
+                    </div>
+                </div>
+                <div class="survey-row">
+                    <label for="changes">If yes select type of change</label>
+                    <select name="changes" id="changes">
+                    <option value="blank">------------</option>
+                    <option value="emotional">Emotionaly</option>
+                    <option value="intelectual">Intelectualy</option>
+                    <option value="physical">Physicaly</option>
+                    <option value="spiritual">Spiritualy</option>
+                    </select>
+                </div>
+                <div class="survey-row">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <div class="survey-row">
+                    <label for="text">Comments</label>
+                    <textarea name="user_input" id="text" placeholder="Enter comments here..."></textarea>
+                </div>
+                <div class="survey-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="notrequired@gmail.com">
+                </div>
+                <div class="survey-row">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="(111)111-1111">
+                </div>
+                <div class="survey-row">
+                    <input type="submit" value="submit form">
+                </div>
+            </fieldset>
+        </form>
+
     </main>
     
 

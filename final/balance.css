@@ -1,6 +1,7 @@
 .current {
     color: brown;
 }
+
 .table {
     border: solid grey;
     border-spacing: 0;
@@ -21,17 +22,76 @@
 .num {
     vertical-align: top;
 }
+
 .table thead tr {
     background-color:#E7DECD
 }
+
 .table tbody tr:nth-child(odd) {
     background-color:#698F3F ;
     color:white;
 }
+
 .green {
     background-color: whitesmoke;
     color: green;
 }
+.check-row {
+
+}
+.survey-row {
+
+}
+
+fieldset {
+    background-color: #E7DECD;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0;
+}
+legend {
+    padding: 20px;
+    color: darkgreen;
+}
+.survey-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.change {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: cadetblue;
+}
+.foot {
+    font-family: cursive;
+    font-size: large;
+    color: darkblue;
+ }
+
+ .survey-row label, .check-row label {
+    width: 150px;
+    text-align: right;
+ }
+
+ .survey-row input:not([type='submit']), 
+.survey-row select,
+.survey-row textarea{
+    flex: 1;
+    padding: 8px;
+    font-size: 1em
+}
+
+ .survey-row input[type="submit"] {
+    background-color: lightblue;
+    padding: 10px;
+    border: none;
+ }
+
+
+
 
 @media ONLY screen AND (max-width: 480px) {
     nav {
