@@ -36,12 +36,6 @@
     background-color: whitesmoke;
     color: green;
 }
-.check-row {
-
-}
-.survey-row {
-
-}
 
 fieldset {
     background-color: #E7DECD;
@@ -98,5 +92,9 @@ legend {
         width: 100px;
         height: 100px;
         font-size: larger;
+    }
+    .survey-row {
+        display: flex;
+        flex-direction: column;
     }
 }
